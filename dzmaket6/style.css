@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
 a {
     text-decoration: none;
 }
@@ -18,7 +27,21 @@ a:active {
 }
 
 .header {
+    display: flex;
     margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    width: 533px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .header__menu {
@@ -31,6 +54,12 @@ a:active {
 .top__content {
     margin-top: 84px;
     margin-bottom: 162px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
 }
 
 .top__info {
@@ -38,6 +67,7 @@ a:active {
 }
 
 .title {
+    width: 522px;
     margin-bottom: 17px;
     font-size: 60px;
     line-height: 70px;
@@ -45,6 +75,7 @@ a:active {
 }
 
 .subtitle {
+    width: 466px;
     margin-bottom: 37px;
     font-size: 20px;
     line-height: 23px;
@@ -52,6 +83,9 @@ a:active {
 }
 
 .button1 {
+
+    width: 140px;
+    height: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
     border-radius: 50px;
@@ -61,11 +95,22 @@ a:active {
 }
 
 .button2 {
+    margin-left: 72px;
     font-size: 15px;
     line-height: 18px;
     color: #AAAAAA;
 }
 
+.img {
+    width: 610px;
+}
+
 .top__logo {
     padding-top: 97px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
