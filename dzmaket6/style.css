@@ -83,12 +83,12 @@ a:active {
 }
 
 .button1 {
+    width: 150px;
+height: 50px;
 
-    width: 140px;
-    height: 50px;
-    background: #F25822;
-    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
-    border-radius: 50px;
+background: #F25822;
+box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+border-radius: 50px;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
@@ -113,4 +113,44 @@ a:active {
     justify-content: center;
     align-items: center;
     gap: 48px;
+}
+
+.heading_item {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.item_text {
+font-size: 15px;
+line-height: 150%;
+color: #666666;
+}
+
+.item_feature_big {
+    background: #FFFFFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.item_link {
+    font-size: 11px;
+line-height: 150%;
+color: #000000;
+}
+
+.services {
+    background: #FAFAFA;
+}
+
+.service__title {
+    font-size: 45px;
+line-height: 53px;
+color: #000000;
+}
+
+.service__text {
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #AAAAAA;
 }
