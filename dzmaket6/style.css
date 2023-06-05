@@ -84,14 +84,15 @@ a:active {
 
 .button1 {
     width: 150px;
-height: 50px;
-
-background: #F25822;
-box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
-border-radius: 50px;
+    height: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
+    border: none;
+    outline: none;
 }
 
 .button2 {
@@ -115,37 +116,61 @@ border-radius: 50px;
     gap: 48px;
 }
 
+.feature {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    display: grid;
+    gap: 59px;
+    justify-content: center;
+    grid-template-columns: 310px 370px 310px;
+}
+
 .heading_item {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    padding-top: 25px;
+    padding-bottom: 17px;
 }
 
 .item_text {
-font-size: 15px;
-line-height: 150%;
-color: #666666;
+    font-size: 15px;
+    line-height: 150%;
+    color: #666666;
+    padding-bottom: 25px;
+}
+
+.item_feature {
+    padding-top: 40px;
+    padding-bottom: 25px;
 }
 
 .item_feature_big {
     background: #FFFFFF;
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    padding-right: 31px;
+    padding-left: 29px;
 }
 
 .item_link {
     font-size: 11px;
-line-height: 150%;
-color: #000000;
+    line-height: 150%;
+    color: #000000;
 }
 
 .services {
     background: #FAFAFA;
+    padding-top: 92px;
+    padding-bottom: 100px;
 }
 
 .service__title {
     font-size: 45px;
-line-height: 53px;
-color: #000000;
+    line-height: 53px;
+    color: #000000;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
 }
 
 .service__text {
@@ -153,4 +178,28 @@ color: #000000;
     line-height: 150%;
     text-align: center;
     color: #AAAAAA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 682px;
+    padding-bottom: 55px;
+    
+}
+
+.service_item {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 370px);
+}
+
+.item {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.item_center {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
