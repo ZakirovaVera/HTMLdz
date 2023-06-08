@@ -12,11 +12,6 @@ body {
     padding-right: calc(50% - 570px);
 }
 
-.center__top {
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-}
-
 .header {
     background: #222222;
     display: flex;
