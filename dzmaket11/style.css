@@ -9,11 +9,11 @@ body {
 
 img {
     max-width: 100%;
-  }
+}
 
 a {
     text-decoration: none;
-  }
+}
 
 .center {
     padding-left: calc(50% - 570px);
@@ -64,9 +64,9 @@ a {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
     margin-top: 48%;
-  }
+}
 
-.slogan__text {
+.slogan__title {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -74,7 +74,7 @@ a {
     color: #222222;
 }
 
-.fontsize-top {
+.slogan__heading {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -91,7 +91,7 @@ a {
     padding-bottom: 96px;
     background: #FFFFFF;
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-content: center;
 }
@@ -106,20 +106,25 @@ a {
     grid-column: span 3;
 }
 
-.offer__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
+.sale__content {
+    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.fontsize-offer {
+.sale__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.sale__heading {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -149,7 +154,7 @@ a {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 25px;
     justify-content: center;
@@ -214,10 +219,56 @@ a {
 }
 
 .button-wrapper {
-display: flex;
+    display: flex;
     justify-content: center;
 }
 
 .btn__browse-all:hover {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0% 4% 0;
+    }
+
+    .slogan {
+        padding-left: 4%;
+    }
+
+    .slogan__title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .slogan__heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .offer {
+        padding: 4rem 1rem 7rem;
+        gap: 20px;
+    }
+
+.product_text {
+    padding-top: 3px;
+    padding-bottom: 73px;
+}
+
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 1rem 0rem;
+        gap: 1rem;
+    }
+
+    .desc {
+        padding-top: 13px;
+        padding-bottom: 18px;
+    }
+
+    .btn__browse-all {
+        margin-top: 33px;
+        margin-bottom: 71px;
+    }
 }
