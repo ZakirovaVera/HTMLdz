@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+input[type="text"] {
+    font-family: inherit;
+    /* 1 */
+    font-size: inherit;
+    /* 1 */
+    line-height: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -265,10 +276,129 @@ a {
     color: #FBFBFB;
 }
 
+.subscribe {}
+
+
 .subscribe_fon {
     width: 100vw;
+    height: 448px;
 }
 
+.subscribe__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe__info {
+    width: 350px;
+    text-align: center;
+    padding-right: 224px;
+    padding-top: 96px;
+    padding-bottom: 126px;
+}
+
+.info__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-top: 30px;
+}
+
+.info__text_italic {
+    font-style: italic;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.form__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    padding-bottom: 32px;
+}
+
+.email__group {
+    display: flex;
+}
+
+.email__input {
+    border: 1px solid #E1E1E1;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #222224;
+
+opacity: 0.67;
+}
+
+.email__group .email__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    z-index: 2;
+    background-color: #E1E1E1;
+}
+
+/* кнопка */
+.email__button {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #F16D7F;
+    padding: 1rem;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.email__button:active {
+    background-color: #FFFFFF;
+    color: #F16D7F;
+}
+
+.email__group .email__button {
+    position: relative;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+}
 
 .footer {
     background-color: #222224;
