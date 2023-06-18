@@ -274,6 +274,7 @@ a {
     border: 1px solid #FF6A6A;
     padding: 15px 39px;
     background: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .button-wrapper {
@@ -290,8 +291,7 @@ a {
 
 .feature {
     background-color: #222222;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    min-height: 341px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -303,7 +303,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    
 }
 
 .feature__heading {
@@ -312,6 +312,8 @@ a {
     font-size: 20px;
     line-height: 24px;
     color: #FBFBFB;
+    padding-top: 28px;
+    padding-bottom: 16px;
 }
 
 .feature__text {
@@ -387,6 +389,8 @@ a {
 
 .email__group {
     display: flex;
+    max-width: 356px;
+    justify-content: center;
 }
 
 .email__input {
@@ -434,7 +438,7 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
-.email__button:active {
+.email__button:hover {
     background-color: #FFFFFF;
     color: #F16D7F;
 }
@@ -523,6 +527,7 @@ a {
     }
 
     .feature {
+        padding: 0% 4% 0%;
         flex-direction: column;
         padding-top: 48px;
         padding-bottom: 64px;
@@ -530,6 +535,7 @@ a {
     }
 
     .subscribe__box {
+        padding: 0% 4% 0%;
         flex-direction: column;
         gap: 48px;
         height: 614px;
@@ -540,6 +546,10 @@ a {
     .subscribe__info {
         padding-top: 64px;
         padding-bottom: 0px;
+    }
+
+    .form__subtitle {
+        padding-bottom: 22px;
     }
 
     .footer {
@@ -614,4 +624,41 @@ a {
         margin-top: 41px;
         margin-bottom: 85px;
     }
+
+    .feature {
+        padding-bottom: 81px;
+    gap: 47px;
+    }
+
+    .subscribe__box {
+        height: 610px;
+    gap: 59px;}
+
+    .info__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .form__title {
+        line-height: 153.2%;
+    }
+
+.form__subtitle {
+    font-size: 14px;
+line-height: 153.2%;
+}
+
+.footer {
+    flex-direction: column-reverse;
+}
+
+.footer__text {
+    padding-top: 40px;
+    padding-bottom: 9px;
+}
+
+.icons {
+    padding-top: 43px;
+
+}
 }
