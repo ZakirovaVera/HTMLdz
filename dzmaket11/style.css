@@ -474,6 +474,10 @@ a {
     padding-bottom: 23px;
 }
 
+.icon__link {
+    transition: background-color 0.3s;
+}
+
 .icon__link:hover path:first-child {
     fill: #F16D7F;
 }
