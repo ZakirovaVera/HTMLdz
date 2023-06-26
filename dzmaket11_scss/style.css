@@ -467,7 +467,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+.slider img {
+  margin-top: 11px;
+  margin-bottom: 42px;
+}
 .slider__arrow {
   background: rgba(42, 42, 42, 0.15);
   display: flex;
@@ -478,15 +481,12 @@ a {
   position: absolute;
   top: 365px;
 }
-
 .slider__arrow:hover path {
   fill: #F16D7F;
 }
-
 .slider__arrow_left {
   left: 0;
 }
-
 .slider__arrow_right {
   right: 0;
 }

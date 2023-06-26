@@ -520,31 +520,36 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.slider__arrow {
-    background: rgba(42, 42, 42, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    top: 365px
-}
 
-.slider__arrow:hover path {
-    fill: $colorSelectSite
-}
+    & img {
+        margin-top: 11px;
+        margin-bottom: 42px;
+    }
 
-.slider__arrow_left {
-    left: 0
-}
+    &__arrow {
+        background: rgba(42, 42, 42, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        top: 365px;
+    }
 
-.slider__arrow_right {
-    right: 0
-}
+    &__arrow:hover path {
+        fill: $colorSelectSite
+    }
 
+    &__arrow_left {
+        left: 0
+    }
+
+    &__arrow_right {
+        right: 0
+    }
+}
 
 .content {
     height: 100px;
