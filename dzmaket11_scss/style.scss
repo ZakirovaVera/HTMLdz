@@ -754,18 +754,33 @@ summary::-webkit-details-marker {
 }
 
 // Страница Catalog 
+.filter {
+    width: 100%;
+    padding: 13px 16px 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+}
 
 .filter-sort {
-    height: 134px;
+    padding-top: 39px;
+    padding-bottom: 54px;
+    display: flex;
+    gap: 30px;
+}
+
+.filter-box {
     position: relative;
+    height: 40px;
+    width: 360px;
 }
 
 .filter {
     padding: 13px 16px 16px;
     box-sizing: border-box;
-    width: 360px;
+    width: 100%;
     position: absolute;
-    top: 39px;
     z-index: 1;
 
     &[open] {
@@ -797,7 +812,8 @@ summary::-webkit-details-marker {
 
     &__item {
         margin-top: 16px;
-        &[open] .filter__head{
+
+        &[open] .filter__head {
             color: $colorSelectSite;
         }
     }
@@ -826,11 +842,41 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    &:hover {
-        color: $colorSelectSite;
-    }
+
+        &:hover {
+            color: $colorSelectSite;
+        }
     }
 }
+
+.sort-box {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.sort__summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sort__heading {
+    color: $colorFilter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sort__heading path {
+    fill: $colorFilter;
+}
+
+.sort__box {
+    background:$colorWhite;
+box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+padding: 7px 30px 11px 9px;
+}
+
 
 .product-catalog {
     margin-bottom: 96px;
