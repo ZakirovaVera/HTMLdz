@@ -849,34 +849,116 @@ summary::-webkit-details-marker {
     }
 }
 
-.sort-box {
+.sort {
     display: flex;
-    gap: 18px;
+    gap: 28px;
     align-items: center;
-}
+    position: relative;
 
-.sort__summary {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.sort__heading {
-    color: $colorFilter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.sort__heading path {
-    fill: $colorFilter;
-}
+    &__details {
+        position: relative;
+    }
 
-.sort__box {
-    background:$colorWhite;
-box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-padding: 7px 30px 11px 9px;
-}
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
+    &__heading {
+        color: $colorFilter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & path {
+            fill: $colorFilter;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 1;
+        position: absolute;
+        background: $colorWhite;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        left: -9px;
+        top: 22px;
+    }
+
+    &__check {
+        // display: flex;
+        // align-items: center;
+        // gap: 9px;
+        color: #6F6E6E;
+        font-size: 14px;
+        // font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & label {
+            position: relative;
+            // display: inline-block;
+            display: flex;
+            align-items: center;
+            /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+            padding-left: 22px;
+
+            &::before,
+            &::after {
+                position: absolute;
+                // content: "";
+                // /*Needed for the line-height to take effect*/
+                // display: inline-block;
+            }
+
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 13px;
+                width: 13px;
+                border: 1px solid #EBEBEB;
+                left: 0px;
+                /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+                // top: 3px;
+            }
+
+            /*Галка*/
+            &::after {
+                height: 3px;
+                width: 7px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                transform: rotate(-45deg);
+                left: 3px;
+                top: 5px;
+            }
+        }
+
+        /*Прячем галку по умолчанию*/
+        & input[type=checkbox]+label::after {
+            content: none;
+        }
+
+        /*Показываем галку по состоянию checked*/
+        & input[type=checkbox]:checked+label::after {
+            content: "";
+        }
+
+        & input[type=checkbox] {
+            position: absolute;
+            left: -999999px;
+        }
+    }
+
+}
 
 .product-catalog {
     margin-bottom: 96px;

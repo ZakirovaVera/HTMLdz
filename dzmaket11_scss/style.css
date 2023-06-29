@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -756,18 +757,20 @@ summary::-webkit-details-marker {
   color: #F16D7F;
 }
 
-.sort-box {
+.sort {
   display: flex;
-  gap: 18px;
+  gap: 28px;
   align-items: center;
+  position: relative;
 }
-
+.sort__details {
+  position: relative;
+}
 .sort__summary {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .sort__heading {
   color: #6F6E6E;
   font-size: 14px;
@@ -775,15 +778,70 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
-
 .sort__heading path {
   fill: #6F6E6E;
 }
-
 .sort__box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+  position: absolute;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   padding: 7px 30px 11px 9px;
+  left: -9px;
+  top: 22px;
+}
+.sort__check {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /*Прячем галку по умолчанию*/
+  /*Показываем галку по состоянию checked*/
+}
+.sort__check label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+  padding-left: 22px;
+  /*Галка*/
+}
+.sort__check label::before, .sort__check label::after {
+  position: absolute;
+}
+.sort__check label::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #EBEBEB;
+  left: 0px;
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+  *to vertically center it.
+  */
+}
+.sort__check label::after {
+  height: 3px;
+  width: 7px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 3px;
+  top: 5px;
+}
+.sort__check input[type=checkbox] + label::after {
+  content: none;
+}
+.sort__check input[type=checkbox]:checked + label::after {
+  content: "";
+}
+.sort__check input[type=checkbox] {
+  position: absolute;
+  left: -999999px;
 }
 
 .product-catalog {
