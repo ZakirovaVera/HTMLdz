@@ -294,6 +294,9 @@ summary::-webkit-details-marker {
   order: 0;
   flex-grow: 0;
 }
+.item__product__content .item__headline:hover {
+  color: #F16D7F;
+}
 .item__product__content .item__desc {
   font-style: normal;
   font-weight: 300;

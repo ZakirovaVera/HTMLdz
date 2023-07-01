@@ -556,8 +556,6 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 .footer__text {
@@ -568,11 +566,13 @@ a {
     color: #FBFBFB;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 2%;
 }
 
 .icons {
     padding-top: 24px;
     padding-bottom: 23px;
+    padding-right: 2%;
 }
 
 .icon__link {

@@ -328,6 +328,9 @@ summary::-webkit-details-marker {
             order: 0;
             flex-grow: 0
         }
+        .item__headline:hover {
+            color: $colorSelectSite;
+        }
 
         .item__desc {
             font-style: normal;
