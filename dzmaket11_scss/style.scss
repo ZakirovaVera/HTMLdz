@@ -328,6 +328,7 @@ summary::-webkit-details-marker {
             order: 0;
             flex-grow: 0
         }
+
         .item__headline:hover {
             color: $colorSelectSite;
         }
@@ -612,20 +613,31 @@ summary::-webkit-details-marker {
 
 .breadcrumbs {
     padding-right: 2%;
-}
 
-.breadcrumbs__link {
-    color: #636363;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
-    font-style: normal;
-
-    &_site {
-        color: $colorSelectSite;
-        font-weight: 700;
+    &__link {
+        color: #636363;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
         font-style: normal;
+
+        &:hover {
+            color: $colorSite;
+        }
     }
+
+    &__ul {
+        display: flex;
+        list-style: none;
+    }
+
+    &__li:not(:last-child):after {
+        content: '\/';
+        padding: 0 10px;
+    }
+    &__li:last-child .breadcrumbs__link{
+        font-weight: 700;
+        color: $colorSite;}
 }
 
 .slider {

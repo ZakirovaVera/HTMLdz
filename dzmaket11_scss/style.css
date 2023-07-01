@@ -548,7 +548,6 @@ summary::-webkit-details-marker {
 .breadcrumbs {
   padding-right: 2%;
 }
-
 .breadcrumbs__link {
   color: #636363;
   font-size: 14px;
@@ -560,6 +559,14 @@ summary::-webkit-details-marker {
   color: #F16D7F;
   font-weight: 700;
   font-style: normal;
+}
+.breadcrumbs__ul {
+  display: flex;
+  list-style: none;
+}
+.breadcrumbs__li:not(:last-child):after {
+  content: "/";
+  padding: 0 10px;
 }
 
 .slider {
