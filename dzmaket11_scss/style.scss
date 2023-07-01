@@ -622,7 +622,7 @@ summary::-webkit-details-marker {
         font-style: normal;
 
         &:hover {
-            color: $colorSite;
+            color: $colorSelectSite;
         }
     }
 
@@ -635,9 +635,11 @@ summary::-webkit-details-marker {
         content: '\/';
         padding: 0 10px;
     }
-    &__li:last-child .breadcrumbs__link{
+
+    &__li:last-child .breadcrumbs__link {
         font-weight: 700;
-        color: $colorSite;}
+        color: $colorSelectSite;
+    }
 }
 
 .slider {
@@ -979,6 +981,12 @@ summary::-webkit-details-marker {
     margin-bottom: 96px;
 }
 
+// Страница Cart
+
+.basket {
+    height: 500px;
+    background: red;
+}
 
 @media (max-width: 1024px) {
 

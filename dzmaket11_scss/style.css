@@ -555,10 +555,8 @@ summary::-webkit-details-marker {
   font-weight: 300;
   font-style: normal;
 }
-.breadcrumbs__link_site {
+.breadcrumbs__link:hover {
   color: #F16D7F;
-  font-weight: 700;
-  font-style: normal;
 }
 .breadcrumbs__ul {
   display: flex;
@@ -567,6 +565,10 @@ summary::-webkit-details-marker {
 .breadcrumbs__li:not(:last-child):after {
   content: "/";
   padding: 0 10px;
+}
+.breadcrumbs__li:last-child .breadcrumbs__link {
+  font-weight: 700;
+  color: #F16D7F;
 }
 
 .slider {
@@ -856,6 +858,11 @@ summary::-webkit-details-marker {
 
 .product-catalog {
   margin-bottom: 96px;
+}
+
+.basket {
+  height: 500px;
+  background: red;
 }
 
 @media (max-width: 1024px) {
