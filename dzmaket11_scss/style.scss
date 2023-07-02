@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-input[type="text"] {
+input[type=text] {
     font-family: inherit;
     /* 1 */
     font-size: inherit;
@@ -35,6 +35,17 @@ summary {
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+#basket__number {
+    width: 44px;
+    border: 0.50px #EAEAEA solid;
+    text-align: center;
+    color: #656565;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .center {
@@ -66,14 +77,14 @@ summary::-webkit-details-marker {
         display: flex;
         align-items: center;
         gap: 41px;
-        padding-left: 2%;
+        // padding-left: 2%;
     }
 
     &__right {
         display: flex;
         align-items: center;
         gap: 33px;
-        padding-right: 2%;
+        // padding-right: 2%;
     }
 
     & svg:hover path {
@@ -569,7 +580,7 @@ summary::-webkit-details-marker {
         color: #FBFBFB;
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 2%;
+        // padding-left: 2%;
     }
 
 }
@@ -577,7 +588,7 @@ summary::-webkit-details-marker {
 .icons {
     padding-top: 24px;
     padding-bottom: 23px;
-    padding-right: 2%;
+    // padding-right: 2%;
 }
 
 .icon__link {
@@ -607,12 +618,12 @@ summary::-webkit-details-marker {
         font-weight: 400;
         line-height: 29px;
         font-style: normal;
-        padding-left: 2%;
+        // padding-left: 2%;
     }
 }
 
 .breadcrumbs {
-    padding-right: 2%;
+    // padding-right: 2%;
 
     &__link {
         color: #636363;
@@ -991,22 +1002,93 @@ summary::-webkit-details-marker {
 .basket {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.basket__selectedproducts{
+
+.basket__selectedproducts {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-top: 98px;
+    padding-bottom: 128px;
+}
+
+.basket__item-box {
+    width: 652px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
+
 .basket__item {
     width: 650px;
     display: flex;
-    align-items: center;
     gap: 30px;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.basket__heading {
+    max-width: 262px;
+    color: $colorFont;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-top: 22px;
+    padding-bottom: 42px;
+}
+
+.basket__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.basket__text {
+    color: #575757;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap: break-word
+}
+
+.basket__colortext {
+    color: $colorCartBasketText
+}
+
+
+.button__link {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: 0.50px #A4A4A4 solid;
+    padding: 16px 40px;
+    background: $colorWhite;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button__link:hover {
+    color: $colorWhite;
+    border: 1px solid $colorSelectSite;
+    background-color: $colorSelectSite;
+}
+
+.basket__button {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 @media (max-width: 1024px) {
+
+    .header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
     .promo__slogan {
         padding-left: 4%;
@@ -1075,6 +1157,10 @@ summary::-webkit-details-marker {
         padding-bottom: 22px;
     }
 
+    .footer {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
 }
 
