@@ -1022,6 +1022,7 @@ summary::-webkit-details-marker {
 
 
 .basket__item {
+    position: relative;
     width: 650px;
     display: flex;
     gap: 30px;
@@ -1058,6 +1059,14 @@ summary::-webkit-details-marker {
     color: $colorCartBasketText
 }
 
+.basket__delete {
+    position: absolute;
+    top: 28px;
+    right: 22px;
+}
+.basket__delete:hover path {
+    fill: $colorSelectSite;
+}
 
 .button__link {
     color: #000;

@@ -890,6 +890,7 @@ summary::-webkit-details-marker {
 }
 
 .basket__item {
+  position: relative;
   width: 650px;
   display: flex;
   gap: 30px;
@@ -923,6 +924,16 @@ summary::-webkit-details-marker {
 
 .basket__colortext {
   color: #6F6E6E;
+}
+
+.basket__delete {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+
+.basket__delete:hover path {
+  fill: #F16D7F;
 }
 
 .button__link {
