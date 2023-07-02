@@ -628,12 +628,17 @@ summary::-webkit-details-marker {
 
     &__ul {
         display: flex;
-        list-style: none;
+        list-style-type: none;
     }
 
-    &__li:not(:last-child):after {
-        content: '\/';
-        padding: 0 10px;
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding: 0 8px;
+        color: #636363;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+        font-style: normal;
     }
 
     &__li:last-child .breadcrumbs__link {
@@ -984,9 +989,22 @@ summary::-webkit-details-marker {
 // Страница Cart
 
 .basket {
-    height: 500px;
-    background: red;
+    display: flex;
+    align-items: center;
 }
+.basket__selectedproducts{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.basket__item {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 
 @media (max-width: 1024px) {
 
@@ -1062,11 +1080,7 @@ summary::-webkit-details-marker {
 
 @media (max-width: 767px) {
 
-    .header__right_personal_area {
-        display: none;
-    }
-
-    .header__right_basket {
+    .header__link-site {
         display: none;
     }
 
