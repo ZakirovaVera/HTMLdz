@@ -27,12 +27,15 @@ a {
   text-decoration: none;
 }
 
-summary {
-  display: block;
+summary::-webkit-details-marker,
+summary::-moz-details-marker,
+summary::-ms-details-marker,
+summary::-o-details-marker {
+  display: none;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+summary {
+  list-style: none;
 }
 
 #basket__number {
@@ -872,7 +875,6 @@ summary::-webkit-details-marker {
   display: flex;
   justify-content: space-between;
 }
-
 .basket__selectedproducts {
   display: flex;
   flex-direction: column;
@@ -880,14 +882,12 @@ summary::-webkit-details-marker {
   padding-top: 98px;
   padding-bottom: 128px;
 }
-
 .basket__item-box {
   width: 652px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-
 .basket__item {
   position: relative;
   width: 650px;
@@ -895,7 +895,6 @@ summary::-webkit-details-marker {
   gap: 30px;
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
 }
-
 .basket__heading {
   max-width: 262px;
   color: #222222;
@@ -905,13 +904,11 @@ summary::-webkit-details-marker {
   padding-top: 22px;
   padding-bottom: 42px;
 }
-
 .basket__text-box {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-
 .basket__text {
   color: #575757;
   font-size: 22px;
@@ -920,19 +917,38 @@ summary::-webkit-details-marker {
   line-height: normal;
   word-wrap: break-word;
 }
-
 .basket__colortext {
   color: #6F6E6E;
 }
-
 .basket__delete {
   position: absolute;
   top: 28px;
   right: 22px;
 }
-
 .basket__delete:hover path {
   fill: #F16D7F;
+}
+.basket__button {
+  display: flex;
+  justify-content: space-between;
+}
+.basket__form {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  padding-top: 112px;
+}
+.basket__adress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.basket__shippingadress {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .button__link {
@@ -946,37 +962,10 @@ summary::-webkit-details-marker {
   background: #FFFFFF;
   transition: background-color 0.3s ease-in-out;
 }
-
 .button__link:hover {
   color: #FFFFFF;
   border: 1px solid #F16D7F;
   background-color: #F16D7F;
-}
-
-.basket__button {
-  display: flex;
-  justify-content: space-between;
-}
-
-.basket__form {
-  display: flex;
-  flex-direction: column;
-  gap: 57px;
-  padding-top: 112px;
-}
-
-.basket__adress {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.basket__shippingadress {
-  color: #222222;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .shippingadress {
@@ -991,7 +980,6 @@ summary::-webkit-details-marker {
   padding-left: 16px;
   box-sizing: border-box;
 }
-
 .shippingadress-button {
   color: #4A4A4A;
   font-size: 11px;
@@ -1004,7 +992,6 @@ summary::-webkit-details-marker {
   height: 35px;
   transition: background-color 0.3s ease-in-out;
 }
-
 .shippingadress-button:hover {
   color: #FFFFFF;
   border: 1px solid #F16D7F;
@@ -1016,7 +1003,6 @@ summary::-webkit-details-marker {
   width: 360px;
   height: 214px;
 }
-
 .proceed-checkout__content {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -1026,7 +1012,6 @@ summary::-webkit-details-marker {
   flex-direction: column;
   gap: 12px;
 }
-
 .proceed-checkout__price {
   color: #4A4A4A;
   font-size: 11px;
@@ -1034,7 +1019,6 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
-
 .proceed-checkout__totalprice {
   color: #222;
   font-size: 16px;
@@ -1042,25 +1026,21 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
 }
-
 .proceed-checkout__colortext {
   color: #F16D7F;
   font-weight: 700;
 }
-
 .proceed-checkout__button-box {
   display: flex;
   padding-bottom: 42px;
   flex-direction: column;
   align-items: center;
 }
-
 .proceed-checkout__line {
   width: 275px;
   border-top: 1px solid #E2E2E2;
   padding-bottom: 16px;
 }
-
 .proceed-checkout__button {
   width: 273px;
   height: 50px;
@@ -1069,7 +1049,6 @@ summary::-webkit-details-marker {
   background-color: #F16D7F;
   transition: background-color 0.3s ease-in-out;
 }
-
 .proceed-checkout__button:hover {
   color: #F16D7F;
   border: 1px solid #F16D7F;
