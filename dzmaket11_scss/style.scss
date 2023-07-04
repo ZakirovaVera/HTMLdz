@@ -258,7 +258,7 @@ summary {
 }
 
 .product {
-    margin-bottom: 60px;
+    margin-bottom: 96px;
 
     &__heading {
         text-align: center;
@@ -1026,7 +1026,8 @@ summary {
         width: 650px;
         display: flex;
         gap: 30px;
-        box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 17px 19px 24px 0px #00000021;
     }
 
     &__heading {
@@ -1060,8 +1061,11 @@ summary {
 
     &__delete {
         position: absolute;
-        top: 28px;
-        right: 22px;
+        top: 0px;
+        right: 0px;
+        border: none;
+        background: none;
+        padding: 22px;
 
         &:hover path {
             fill: $colorSelectSite;
@@ -1240,6 +1244,9 @@ summary {
             gap: 20px;
         }
     }
+    .product{
+        margin-bottom: 64px;
+    }
 
     .product__text {
         padding-top: 3px;
@@ -1247,7 +1254,7 @@ summary {
     }
 
     .product__items {
-        padding: 0rem 1rem 0rem;
+        padding: 0rem 1rem 32px 1rem;
         gap: 1rem;
     }
 
@@ -1347,8 +1354,9 @@ summary {
         }
     }
 
-    .products {
+    .product {
         padding: 0% 4% 0;
+        margin-bottom: 96px;
     }
 
     .product__text {
@@ -1357,6 +1365,7 @@ summary {
 
     .product__items {
         grid-template-columns: auto;
+        padding-bottom: 40px;
     }
 
     .item__product {
