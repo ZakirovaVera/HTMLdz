@@ -596,7 +596,7 @@ summary {
 }
 
 // Страница Product
-.top-head {
+.breadcrumbs {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #F8F3F4;
@@ -612,41 +612,41 @@ summary {
         font-style: normal;
         // padding-left: 2%;
     }
-}
 
-.breadcrumbs {
-    // padding-right: 2%;
+    &-nav {
 
-    &__link {
-        color: #636363;
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 300;
-        font-style: normal;
+        // padding-right: 2%;
+        &__ul {
+            display: flex;
+            list-style-type: none;
+        }
 
-        &:hover {
+        &__link {
+            color: #636363;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 300;
+            font-style: normal;
+
+            &:hover {
+                color: $colorSelectSite;
+            }
+        }
+
+        &__li:not(:last-child)::after {
+            content: '/';
+            padding: 0 8px;
+            color: #636363;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        &__li:last-child .breadcrumbs-nav__link {
+            font-weight: 700;
             color: $colorSelectSite;
         }
-    }
-
-    &__ul {
-        display: flex;
-        list-style-type: none;
-    }
-
-    &__li:not(:last-child)::after {
-        content: '/';
-        padding: 0 8px;
-        color: #636363;
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    &__li:last-child .breadcrumbs__link {
-        font-weight: 700;
-        color: $colorSelectSite;
     }
 }
 
