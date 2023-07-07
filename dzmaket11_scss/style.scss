@@ -1212,94 +1212,135 @@ summary {
 // Страница Registration
 
 .registration {
-    &__data {
-        max-width: 360px;
-        padding: 64px 0 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 128px;
+    &__form {
+        .registration__data {
+            max-width: 360px;
+            padding: 64px 0 96px;
 
-        & input:not([type=radio]) {
-            border: 0.5px #A4A4A4 solid;
-            height: 45px;
-            width: 100%;
-            padding-left: 16px;
-            box-sizing: border-box;
-        }
+            & input:not([type=radio]) {
+                border: 0.5px #A4A4A4 solid;
+                height: 45px;
+                width: 100%;
+                padding-left: 16px;
+                box-sizing: border-box;
+            }
 
-        &__name {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+            &__name {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
 
-        &__heading {
-            color: $colorFont;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 19px;
-        }
-
-        &__desc {
-            color: #B1B1B1;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 16px;
-        }
-
-        &__radio {
-            display: flex;
-            padding: 32px 0;
-
-            & label {
-                color: #000;
-                font-size: 11px;
+            &__heading {
+                color: $colorFont;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 13px;
-                padding-left: 10px;
-                padding-right: 20px;
+                line-height: 19px;
+            }
+
+            &__desc {
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+            }
+
+            &__radio {
+                display: flex;
+                padding: 32px 0;
+
+                & label {
+                    color: #000;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 13px;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                }
+            }
+
+            &__text {
+                max-width: 359px;
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+                padding: 15px 0 40px;
+            }
+
+            &__button {
+                width: 167px;
+                height: 50px;
+                flex-shrink: 0;
+                color: $colorWhite;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 17px;
+                border: 1px solid $colorSelectSite;
+                background-color: $colorSelectSite;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    color: $colorSelectSite;
+                    border: 1px solid $colorSelectSite;
+                    background-color: $colorWhite;
+                }
+
+                & svg {
+                    padding-left: 20px;
+                }
+
+                & path {
+                    fill: $colorWhite;
+                }
+
+                &:hover path {
+                    fill: $colorSelectSite;
+                }
             }
         }
+    }
 
-        &__text {
-            max-width: 359px;
-            color: #B1B1B1;
-            font-size: 13px;
+    &__features {
+        max-width:  652px;
+        padding-top: 64px;
+        &-title {
+            color: $colorFont;
+            font-size: 24px;
             font-style: normal;
             font-weight: 300;
-            line-height: 16px;
-            padding: 15px 0 40px;
+            line-height: 29px;
         }
 
-        &__button {
-            width: 167px;
-            height: 50px;
-            flex-shrink: 0;
-            color: $colorWhite;
-            font-size: 14px;
+        &-subtitle{
+            color: $colorFont;
+            font-size: 24px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 17px;
-            border: 1px solid $colorSelectSite;
-            background-color: $colorSelectSite;
-            transition: background-color 0.3s ease-in-out;
-
-            &:hover {
-                color: $colorSelectSite;
-                border: 1px solid $colorSelectSite;
-                background-color: $colorWhite;
-            }
-
+            font-weight: 300;
+            line-height: 29px;
+            padding: 22px 0;
+        }
+        &-text-box{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &-text {
+            color: $colorFont;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 29px;
             & svg {
-                padding-left: 20px;
-            }
-
-            & path {
-                fill: $colorWhite;
-            }
-
-            &:hover path {
-                fill: $colorSelectSite;
+                padding-right: 22px;
             }
         }
     }

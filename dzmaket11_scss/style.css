@@ -1035,41 +1035,46 @@ summary {
   background-color: #FFFFFF;
 }
 
-.registration__data {
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 128px;
+}
+.registration__form .registration__data {
   max-width: 360px;
   padding: 64px 0 96px;
 }
-.registration__data input:not([type=radio]) {
+.registration__form .registration__data input:not([type=radio]) {
   border: 0.5px #A4A4A4 solid;
   height: 45px;
   width: 100%;
   padding-left: 16px;
   box-sizing: border-box;
 }
-.registration__data__name {
+.registration__form .registration__data__name {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.registration__data__heading {
+.registration__form .registration__data__heading {
   color: #222222;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
 }
-.registration__data__desc {
+.registration__form .registration__data__desc {
   color: #B1B1B1;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
   line-height: 16px;
 }
-.registration__data__radio {
+.registration__form .registration__data__radio {
   display: flex;
   padding: 32px 0;
 }
-.registration__data__radio label {
+.registration__form .registration__data__radio label {
   color: #000;
   font-size: 11px;
   font-style: normal;
@@ -1078,7 +1083,7 @@ summary {
   padding-left: 10px;
   padding-right: 20px;
 }
-.registration__data__text {
+.registration__form .registration__data__text {
   max-width: 359px;
   color: #B1B1B1;
   font-size: 13px;
@@ -1087,7 +1092,7 @@ summary {
   line-height: 16px;
   padding: 15px 0 40px;
 }
-.registration__data__button {
+.registration__form .registration__data__button {
   width: 167px;
   height: 50px;
   flex-shrink: 0;
@@ -1100,19 +1105,53 @@ summary {
   background-color: #F16D7F;
   transition: background-color 0.3s ease-in-out;
 }
-.registration__data__button:hover {
+.registration__form .registration__data__button:hover {
   color: #F16D7F;
   border: 1px solid #F16D7F;
   background-color: #FFFFFF;
 }
-.registration__data__button svg {
+.registration__form .registration__data__button svg {
   padding-left: 20px;
 }
-.registration__data__button path {
+.registration__form .registration__data__button path {
   fill: #FFFFFF;
 }
-.registration__data__button:hover path {
+.registration__form .registration__data__button:hover path {
   fill: #F16D7F;
+}
+.registration__features {
+  max-width: 652px;
+  padding-top: 64px;
+}
+.registration__features-title {
+  color: #222222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__features-subtitle {
+  color: #222222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  padding: 22px 0;
+}
+.registration__features-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__features-text {
+  color: #222222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__features-text svg {
+  padding-right: 22px;
 }
 
 @media (max-width: 1024px) {
