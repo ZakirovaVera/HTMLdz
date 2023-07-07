@@ -836,8 +836,45 @@ summary {
   left: -999999px;
 }
 
-.product-catalog {
-  margin-bottom: 96px;
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 48px;
+}
+.pagination-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+}
+.pagination__ul {
+  display: flex;
+  gap: 22px;
+}
+.pagination__li {
+  display: inline;
+}
+.pagination__a, .pagination__li span {
+  color: #C4C4C4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  float: left;
+  text-decoration: none;
+}
+.pagination__a:hover, .pagination__li span:hover {
+  color: #F16D7F;
+}
+.pagination__button {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: none;
+  background: none;
+}
+.pagination__button:hover path {
+  fill: #F16D7F;
 }
 
 .basket {

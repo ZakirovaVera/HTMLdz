@@ -977,8 +977,58 @@ summary {
 
 }
 
-.product-catalog {
-    margin-bottom: 96px;
+// .product-catalog {
+//     margin-bottom: 96px;
+// }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 48px;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #EBEBEB;
+    }
+
+    &__ul {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__li {
+        display: inline;
+    }
+
+    &__a, &__li span{
+        color: #C4C4C4;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 19px;
+        float: left;
+        // padding: 8px 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        border: none;
+        background: none;
+
+        &:hover path {
+            fill: $colorSelectSite;
+        }
+    }
 }
 
 // Страница Cart
