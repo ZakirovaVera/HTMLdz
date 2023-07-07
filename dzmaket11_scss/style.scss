@@ -6,16 +6,16 @@
     padding: 0;
 }
 
-input[type=text] {
-    font-family: inherit;
-    /* 1 */
-    font-size: inherit;
-    /* 1 */
-    line-height: inherit;
-    /* 1 */
-    margin: 0;
-    /* 2 */
-}
+// input[type=text] {
+//     font-family: inherit;
+//     /* 1 */
+//     font-size: inherit;
+//     /* 1 */
+//     line-height: inherit;
+//     /* 1 */
+//     margin: 0;
+//     /* 2 */
+// }
 
 body {
     font-family: 'Lato', sans-serif;
@@ -38,17 +38,6 @@ summary::-o-details-marker {
 
 summary {
     list-style: none;
-}
-
-#basket__number {
-    width: 44px;
-    border: 0.50px #EAEAEA solid;
-    text-align: center;
-    color: #656565;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .center {
@@ -790,14 +779,6 @@ summary {
 }
 
 // Страница Catalog 
-.filter {
-    width: 100%;
-    padding: 13px 16px 16px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 1;
-}
 
 .filter-sort {
     padding-top: 39px;
@@ -1055,8 +1036,20 @@ summary {
         word-wrap: break-word
     }
 
+    &__text input {
+        margin-left: 24px;
+        width: 44px;
+        border: 0.50px #EAEAEA solid;
+        text-align: center;
+        color: #656565;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     &__colortext {
-        color: $colorCartBasketText
+        color: $colorFilter;
     }
 
     &__delete {
@@ -1075,6 +1068,24 @@ summary {
     &__button {
         display: flex;
         justify-content: space-between;
+
+        &__link {
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: 0.50px #A4A4A4 solid;
+            padding: 16px 40px;
+            background: $colorWhite;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                color: $colorWhite;
+                border: 1px solid $colorSelectSite;
+                background-color: $colorSelectSite;
+            }
+        }
     }
 
     &__form {
@@ -1082,138 +1093,216 @@ summary {
         flex-direction: column;
         gap: 57px;
         padding-top: 112px;
+        width: 360px;
     }
 
     &__adress {
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        &__shippingadress {
+            color: $colorFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 19px;
+        }
+
+        & input {
+            color: $colorFont;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 16px;
+            border: 0.50px #A4A4A4 solid;
+            height: 45px;
+            padding-left: 16px;
+            box-sizing: border-box;
+        }
+
+        &-button {
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: 0.5px #A4A4A4 solid;
+            background: white;
+            width: 102px;
+            height: 35px;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                color: $colorWhite;
+                border: 1px solid $colorSelectSite;
+                background-color: $colorSelectSite;
+            }
+        }
     }
 
-    &__shippingadress {
-        color: $colorFont;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
-}
+    &__proceed-checkout {
+        background-color: #F5F3F3;
+        height: 214px;
 
-.button__link {
-    color: #000;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border: 0.50px #A4A4A4 solid;
-    padding: 16px 40px;
-    background: $colorWhite;
-    transition: background-color 0.3s ease-in-out;
+        &__content {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-right: 40px;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-    &:hover {
-        color: $colorWhite;
-        border: 1px solid $colorSelectSite;
-        background-color: $colorSelectSite;
-    }
-}
+        &__price {
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
 
-.shippingadress {
-    color: $colorFont;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border: 0.50px #A4A4A4 solid;
-    height: 45px;
-    width: 360px;
-    padding-left: 16px;
-    box-sizing: border-box;
+        &__totalprice {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
 
-    &-button {
-        color: #4A4A4A;
-        font-size: 11px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        border: 0.5px #A4A4A4 solid;
-        background: white;
-        width: 102px;
-        height: 35px;
-        transition: background-color 0.3s ease-in-out;
+        &__colortext {
+            color: $colorSelectSite;
+            font-weight: 700;
+        }
 
-        &:hover {
+        &__button-box {
+            display: flex;
+            padding-bottom: 42px;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        &__line {
+            width: 275px;
+            border-top: 1px solid #E2E2E2;
+            padding-bottom: 16px;
+        }
+
+        &__button {
+            width: 273px;
+            height: 50px;
             color: $colorWhite;
             border: 1px solid $colorSelectSite;
             background-color: $colorSelectSite;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                color: $colorSelectSite;
+                border: 1px solid $colorSelectSite;
+                background-color: $colorWhite;
+            }
         }
+
     }
+
 }
 
-.proceed-checkout {
-    background-color: #F5F3F3;
-    width: 360px;
-    height: 214px;
+// Страница Registration
 
-    &__content {
-        padding-top: 40px;
-        padding-bottom: 20px;
-        padding-right: 40px;
-        text-align: end;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
+.registration {
+    &__data {
+        max-width: 360px;
+        padding: 64px 0 96px;
 
-    &__price {
-        color: #4A4A4A;
-        font-size: 11px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+        & input:not([type=radio]) {
+            border: 0.5px #A4A4A4 solid;
+            height: 45px;
+            width: 100%;
+            padding-left: 16px;
+            box-sizing: border-box;
+        }
 
-    &__totalprice {
-        color: #222;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
+        &__name {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    &__colortext {
-        color: $colorSelectSite;
-        font-weight: 700;
-    }
+        &__heading {
+            color: $colorFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 19px;
+        }
 
-    &__button-box {
-        display: flex;
-        padding-bottom: 42px;
-        flex-direction: column;
-        align-items: center;
+        &__desc {
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 16px;
+        }
 
-    }
+        &__radio {
+            display: flex;
+            padding: 32px 0;
 
-    &__line {
-        width: 275px;
-        border-top: 1px solid #E2E2E2;
-        padding-bottom: 16px;
-    }
+            & label {
+                color: #000;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 13px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+        }
 
-    &__button {
-        width: 273px;
-        height: 50px;
-        color: $colorWhite;
-        border: 1px solid $colorSelectSite;
-        background-color: $colorSelectSite;
-        transition: background-color 0.3s ease-in-out;
+        &__text {
+            max-width: 359px;
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 16px;
+            padding: 15px 0 40px;
+        }
 
-        &:hover {
-            color: $colorSelectSite;
+        &__button {
+            width: 167px;
+            height: 50px;
+            flex-shrink: 0;
+            color: $colorWhite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
             border: 1px solid $colorSelectSite;
-            background-color: $colorWhite;
+            background-color: $colorSelectSite;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                color: $colorSelectSite;
+                border: 1px solid $colorSelectSite;
+                background-color: $colorWhite;
+            }
+
+            & svg {
+                padding-left: 20px;
+            }
+
+            & path {
+                fill: $colorWhite;
+            }
+
+            &:hover path {
+                fill: $colorSelectSite;
+            }
         }
     }
-
 }
 
 @media (max-width: 1024px) {
@@ -1244,7 +1333,8 @@ summary {
             gap: 20px;
         }
     }
-    .product{
+
+    .product {
         margin-bottom: 64px;
     }
 

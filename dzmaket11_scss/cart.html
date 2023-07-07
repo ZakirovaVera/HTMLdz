@@ -97,7 +97,7 @@
                                 <p class="basket__text">Price: <span class="colortext">$300.00</span></p>
                                 <p class="basket__text">Color: <span class="basket__colortext">Red</span></p>
                                 <p class="basket__text">Size: <span class="basket__colortext">Xl</span></p>
-                                <p class="basket__text">Quantity: <input id="basket__number" type="number" value="1"
+                                <p class="basket__text">Quantity: <input id="basket__number1" type="number" value="1"
                                         min="1" /></p>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                                 <p class="basket__text">Price: <span class="colortext">$300.00</span></p>
                                 <p class="basket__text">Color: <span class="basket__colortext">Red</span></p>
                                 <p class="basket__text">Size: <span class="basket__colortext">Xl</span></p>
-                                <p class="basket__text">Quantity: <input id="basket__number" type="number" value="1"
+                                <p class="basket__text">Quantity: <input id="basket__number2" type="number" value="1"
                                         min="1" /></p>
                             </div>
                         </div>
@@ -129,27 +129,27 @@
                     </div>
                 </div>
                 <div class="basket__button">
-                    <a class="button__link" href="#">CLEAR SHOPPING CART</a>
-                    <a class="button__link" href="#">CONTINUE SHOPPING</a>
+                    <a class="basket__button__link" href="#">CLEAR SHOPPING CART</a>
+                    <a class="basket__button__link" href="#">CONTINUE SHOPPING</a>
                 </div>
             </div>
             <div class="basket__form">
                 <form class="basket__adress">
-                    <h2 class="basket__shippingadress">SHIPPING ADRESS</h2>
-                    <input class="shippingadress shippingadress_city" type="city" placeholder="Bangladesh" required>
-                    <input class="shippingadress" type="state" placeholder="State" required>
-                    <input class="shippingadress" type="postcode" placeholder="Postcode / Zip" required>
-                    <button class="shippingadress-button">GET A QUOTE</button>
+                    <h2 class="basket__adress__shippingadress">SHIPPING ADRESS</h2>
+                    <input type="text" name="sity" placeholder="Bangladesh" required>
+                    <input type="text" name="state" placeholder="State" required>
+                    <input type="number" name="pastcode" placeholder="Postcode / Zip" required>
+                    <button class="basket__adress-button">GET A QUOTE</button>
                 </form>
-                <div class="proceed-checkout">
-                    <div class="proceed-checkout__content">
-                        <p class="proceed-checkout__price">SUB TOTAL $900</p>
-                        <h2 class="proceed-checkout__totalprice">GRAND TOTAL <span
-                                class="proceed-checkout__colortext">$900</span></h2>
+                <div class="basket__proceed-checkout">
+                    <div class="basket__proceed-checkout__content">
+                        <p class="basket__proceed-checkout__price">SUB TOTAL $900</p>
+                        <h2 class="basket__proceed-checkout__totalprice">GRAND TOTAL <span
+                                class="basket__proceed-checkout__colortext">$900</span></h2>
                     </div>
-                    <div class="proceed-checkout__button-box">
-                        <div class="proceed-checkout__line"></div>
-                        <button class="proceed-checkout__button">PROCEED TO CHECKOUT</button>
+                    <div class="basket__proceed-checkout__button-box">
+                        <div class="basket__proceed-checkout__line"></div>
+                        <button class="basket__proceed-checkout__button">PROCEED TO CHECKOUT</button>
                     </div>
 
                 </div>
@@ -171,7 +171,7 @@
                     <h3 class="form__subtitle">FOR OUR NEWLETTER AND PROMOTION</h3>
                     <div class="email">
                         <div class="email__group">
-                            <input class="email__input" type="email" required placeholder="Enter Your Email">
+                            <input class="email__input" name="email" type="email" required placeholder="Enter Your Email">
                             <button class="email__button" type="button">Subscribe</button>
                         </div>
                     </div>
