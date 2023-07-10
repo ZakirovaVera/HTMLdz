@@ -1509,8 +1509,28 @@ summary {
         padding-right: 2%;
     }
 
+    .slider {
+        height: 625px;
+    }
+    .slider img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-height: 100%;
+    }
+    .content {
+        padding-left: 2%;
+        padding-right: 2%;
+        margin: 0;
+    }
+    .product-box{
+        margin-bottom: 128px;
+    }
+
     .product__items-product {
         padding-bottom: 0px;
+    }
+    .item__product:last-child {
+        display: none;
     }
 
     // Страница Catalog 
@@ -1648,6 +1668,7 @@ summary {
         padding-bottom: 46px;
         gap: 32px;
     }
+    
 
     // Страница Catalog 
 
@@ -1680,9 +1701,11 @@ summary {
     .sort {
         gap: 24px;
     }
+
     .product-catalog {
         margin-bottom: 64px;
     }
+
     .product__items-product {
         padding-bottom: 0px;
     }
