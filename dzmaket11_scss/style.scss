@@ -1512,23 +1512,27 @@ summary {
     .slider {
         height: 625px;
     }
+
     .slider img {
         margin-top: 0px;
         margin-bottom: 0px;
         max-height: 100%;
     }
+
     .content {
         padding-left: 2%;
         padding-right: 2%;
         margin: 0;
     }
-    .product-box{
+
+    .product-box {
         margin-bottom: 128px;
     }
 
     .product__items-product {
         padding-bottom: 0px;
     }
+
     .item__product:last-child {
         display: none;
     }
@@ -1668,7 +1672,33 @@ summary {
         padding-bottom: 46px;
         gap: 32px;
     }
-    
+
+    .content__heading {
+        padding-bottom: 32px;
+    }
+
+    .content__price {
+        padding-bottom: 32px;
+    }
+
+    .content__line-big {
+        width: 175px;
+        border-bottom: 0.3px solid #EAEAEA;
+    }
+
+    .sortinggoods {
+        padding-top: 50px;
+        padding-bottom: 64px;
+    }
+
+    .sortinggoods__summary {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .product-box {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
 
     // Страница Catalog 
 

@@ -1405,6 +1405,28 @@ summary {
     padding-bottom: 46px;
     gap: 32px;
   }
+  .content__heading {
+    padding-bottom: 32px;
+  }
+  .content__price {
+    padding-bottom: 32px;
+  }
+  .content__line-big {
+    width: 175px;
+    border-bottom: 0.3px solid #EAEAEA;
+  }
+  .sortinggoods {
+    padding-top: 50px;
+    padding-bottom: 64px;
+  }
+  .sortinggoods__summary {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .product-box {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
   .filter-box {
     width: auto;
   }
