@@ -1499,4 +1499,60 @@ summary {
   .pagination {
     padding-top: 40px;
   }
+  .basket__selectedproducts {
+    gap: 30px;
+  }
+  .basket__img {
+    width: 40%;
+  }
+  .basket__heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 14px;
+    padding-bottom: 26px;
+    padding-right: 10px;
+    max-width: 144px;
+  }
+  .basket__text-box {
+    gap: 4px;
+    padding-bottom: 38px;
+  }
+  .basket__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .basket__text input {
+    font-size: 10px;
+    line-height: 12px;
+    width: 24px;
+    height: 16px;
+  }
+  .basket__delete {
+    padding: 17px;
+  }
+  .basket__delete svg {
+    width: 10px;
+    height: 11px;
+  }
+  .basket__button {
+    gap: 8px;
+    align-items: center;
+  }
+  .basket__button__link {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 18px;
+  }
+  .basket__form {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 96px;
+    gap: 48px;
+  }
+  .basket__adress {
+    width: 100%;
+  }
+  .basket__proceed-checkout {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
