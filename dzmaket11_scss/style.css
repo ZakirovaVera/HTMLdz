@@ -1355,7 +1355,7 @@ summary {
   .registration__form {
     width: 50%;
   }
-  .registration__data {
+  .registration__form .registration__data {
     padding: 40px 0 96px;
   }
   .registration__features {
@@ -1574,5 +1574,20 @@ summary {
   }
   .basket__proceed-checkout {
     width: 100%;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .registration__form {
+    width: 100%;
+  }
+  .registration__form .registration__data {
+    padding: 40px 0 40px;
+  }
+  .registration__features {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
