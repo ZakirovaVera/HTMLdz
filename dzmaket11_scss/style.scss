@@ -1002,7 +1002,8 @@ summary {
         display: inline;
     }
 
-    &__a, &__li span{
+    &__a,
+    &__li span {
         color: #C4C4C4;
         font-size: 16px;
         font-style: normal;
@@ -1501,6 +1502,26 @@ summary {
         padding-right: 2%;
     }
 
+    // Страница Product
+    .breadcrumbs {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .product__items-product {
+        padding-bottom: 0px;
+    }
+
+    // Страница Catalog 
+    .filter-sort {
+        justify-content: space-between;
+        padding-right: 13px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .pagination {
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 767px) {
