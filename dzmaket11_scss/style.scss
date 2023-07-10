@@ -1262,7 +1262,6 @@ summary {
 // Страница Registration
 .registration {
     display: flex;
-    flex-wrap: wrap;
     gap: 128px;
 
     &__form {
@@ -1599,7 +1598,31 @@ summary {
     }
 
     // Страница Registration
+    .registration {
+        padding-left: 2%;
+        padding-right: 2%;
+        gap: 22px;
+    }
 
+    .registration__form {
+        width: 50%;
+    }
+
+    .registration__data {
+        padding: 40px 0 96px;
+    }
+
+    .registration__features {
+        width: 50%;
+        padding-top: 40px;
+    }
+
+    .registration__features-title,
+    .registration__features-subtitle,
+    .registration__features-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 @media (max-width: 767px) {

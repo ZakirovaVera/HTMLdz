@@ -1074,7 +1074,6 @@ summary {
 
 .registration {
   display: flex;
-  flex-wrap: wrap;
   gap: 128px;
 }
 .registration__form .registration__data {
@@ -1347,6 +1346,27 @@ summary {
     padding-top: 59px;
     padding-bottom: 0px;
     gap: 62px;
+  }
+  .registration {
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 22px;
+  }
+  .registration__form {
+    width: 50%;
+  }
+  .registration__data {
+    padding: 40px 0 96px;
+  }
+  .registration__features {
+    width: 50%;
+    padding-top: 40px;
+  }
+  .registration__features-title,
+  .registration__features-subtitle,
+  .registration__features-text {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 @media (max-width: 767px) {
