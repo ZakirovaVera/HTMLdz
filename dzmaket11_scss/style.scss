@@ -1533,7 +1533,7 @@ summary {
         padding-bottom: 0px;
     }
 
-    .item__product:last-child {
+    .product-box .item__product:last-child {
         display: none;
     }
 
@@ -1543,6 +1543,9 @@ summary {
         padding-right: 13px;
         padding-top: 24px;
         padding-bottom: 40px;
+    }
+    .product-catalog .item__product:last-child {
+        display: none;
     }
 
     .pagination {
