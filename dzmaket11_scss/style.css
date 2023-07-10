@@ -1310,9 +1310,6 @@ summary {
   .pagination {
     padding-top: 40px;
   }
-  .breadcrumbs-cart {
-    justify-content: start;
-  }
   .basket {
     padding-left: 2%;
     padding-right: 2%;
@@ -1519,6 +1516,10 @@ summary {
   .pagination {
     padding-top: 40px;
   }
+  .breadcrumbs-cart {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
   .basket__selectedproducts {
     gap: 30px;
   }
@@ -1574,6 +1575,10 @@ summary {
   }
   .basket__proceed-checkout {
     width: 100%;
+  }
+  .breadcrumbs-registration {
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
   .registration {
     flex-direction: column;

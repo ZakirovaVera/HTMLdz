@@ -1550,11 +1550,6 @@ summary {
     }
 
     // Страница Cart
-    .breadcrumbs-cart {
-
-        justify-content: start;
-    }
-
     .basket {
         padding-left: 2%;
         padding-right: 2%;
@@ -1821,6 +1816,10 @@ summary {
     }
 
     // Страница Cart
+    .breadcrumbs-cart {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
 
     .basket__selectedproducts {
         gap: 30px;
@@ -1892,6 +1891,11 @@ summary {
     }
 
     // Страница Registration
+    .breadcrumbs-registration {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
     .registration {
         flex-direction: column;
         gap: 0px;
