@@ -780,7 +780,6 @@ summary {
 }
 
 // Страница Catalog 
-
 .filter-sort {
     padding-top: 39px;
     padding-bottom: 54px;
@@ -1034,7 +1033,6 @@ summary {
 }
 
 // Страница Cart
-
 .basket {
     display: flex;
     justify-content: space-between;
@@ -1262,7 +1260,6 @@ summary {
 }
 
 // Страница Registration
-
 .registration {
     display: flex;
     flex-wrap: wrap;
@@ -1544,6 +1541,7 @@ summary {
         padding-top: 24px;
         padding-bottom: 40px;
     }
+
     .product-catalog .item__product:last-child {
         display: none;
     }
@@ -1551,6 +1549,57 @@ summary {
     .pagination {
         padding-top: 40px;
     }
+
+    // Страница Cart
+    .breadcrumbs-cart {
+
+        justify-content: start;
+    }
+
+    .basket {
+        padding-left: 2%;
+        padding-right: 2%;
+        flex-direction: column;
+    }
+
+    .basket__item-box {
+        width: 100%;
+    }
+
+    .basket__item {
+        width: 100%;
+    }
+
+    .basket__button {
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .basket__form {
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+        padding-top: 64px;
+        padding-bottom: 128px;
+    }
+
+    .basket__adress {
+        width: 50%;
+    }
+
+    .basket__proceed-checkout {
+        width: 50%;
+        margin-top: 39px;
+    }
+
+    .basket__selectedproducts {
+        padding-top: 59px;
+        padding-bottom: 0px;
+        gap: 62px;
+    }
+
+    // Страница Registration
+
 }
 
 @media (max-width: 767px) {
@@ -1698,6 +1747,7 @@ summary {
         font-size: 10px;
         line-height: 12px;
     }
+
     .product-box {
         margin-top: 64px;
         margin-bottom: 64px;
