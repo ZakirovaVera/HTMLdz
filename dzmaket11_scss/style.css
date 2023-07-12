@@ -55,11 +55,13 @@ summary {
   display: flex;
   align-items: center;
   gap: 41px;
+  padding-left: 1rem;
 }
 .header__right {
   display: flex;
   align-items: center;
   gap: 33px;
+  padding-right: 1rem;
 }
 .header svg:hover path {
   fill: #F16D7F;
@@ -165,8 +167,8 @@ summary {
   padding-top: 65px;
   padding-bottom: 96px;
   background: #FFFFFF;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .offer__center {
   display: grid;
@@ -343,8 +345,8 @@ summary {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .feature__item {
   max-width: 360px;
@@ -499,11 +501,13 @@ summary {
   color: #FBFBFB;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 1rem;
 }
 
 .icons {
   padding-top: 24px;
   padding-bottom: 23px;
+  padding-right: 1rem;
 }
 
 .icon__link {
@@ -531,6 +535,10 @@ summary {
   font-weight: 400;
   line-height: 29px;
   font-style: normal;
+  padding-left: 1rem;
+}
+.breadcrumbs-nav {
+  padding-right: 1rem;
 }
 .breadcrumbs-nav__ul {
   display: flex;
@@ -881,6 +889,7 @@ summary {
 .basket {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .basket__selectedproducts {
   display: flex;
@@ -888,6 +897,7 @@ summary {
   gap: 72px;
   padding-top: 98px;
   padding-bottom: 128px;
+  padding-left: 1rem;
 }
 .basket__item-box {
   width: 652px;
@@ -910,6 +920,7 @@ summary {
   word-wrap: break-word;
   padding-top: 22px;
   padding-bottom: 42px;
+  padding-right: 40px;
 }
 .basket__text-box {
   display: flex;
@@ -974,6 +985,7 @@ summary {
   flex-direction: column;
   gap: 57px;
   padding-top: 112px;
+  padding-right: 1rem;
   width: 360px;
 }
 .basket__adress {
@@ -1075,58 +1087,60 @@ summary {
 .registration {
   display: flex;
   gap: 128px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.registration__form .registration__data {
+.registration__data {
   max-width: 360px;
   padding: 64px 0 96px;
 }
-.registration__form .registration__data input:not([type=radio]) {
+.registration__data input:not([type=radio]) {
   border: 0.5px #A4A4A4 solid;
   height: 45px;
   width: 100%;
   padding-left: 16px;
   box-sizing: border-box;
 }
-.registration__form .registration__data__name {
+.registration__data__name {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.registration__form .registration__data__heading {
+.registration__data__heading {
   color: #222222;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
 }
-.registration__form .registration__data__desc {
+.registration__data__desc {
   color: #B1B1B1;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
   line-height: 16px;
 }
-.registration__form .registration__data__radio {
+.registration__data__radio {
   display: flex;
   padding: 32px 0;
   align-items: center;
   /*Изменение цвета кнопки-радио
-  input {
-      appearance: none;
-      border-radius: 50%;
-      width: 17px;
-      height: 17px;
-      border: 1px solid #A4A4A4;
-      transition: 0.2s all linear;
-      margin-right: 10px;
-      position: relative;
-  }
+      input {
+          appearance: none;
+          border-radius: 50%;
+          width: 17px;
+          height: 17px;
+          border: 1px solid #A4A4A4;
+          transition: 0.2s all linear;
+          margin-right: 10px;
+          position: relative;
+      }
 
-  input:checked {
-      border: 6px solid $colorSelectSite;
-  }*/
+      input:checked {
+          border: 6px solid $colorSelectSite;
+      }*/
 }
-.registration__form .registration__data__radio label {
+.registration__data__radio label {
   color: #000;
   font-size: 11px;
   font-style: normal;
@@ -1135,7 +1149,7 @@ summary {
   padding-right: 20px;
   padding-left: 10px;
 }
-.registration__form .registration__data__text {
+.registration__data__text {
   max-width: 359px;
   color: #B1B1B1;
   font-size: 13px;
@@ -1144,7 +1158,7 @@ summary {
   line-height: 16px;
   padding: 15px 0 40px;
 }
-.registration__form .registration__data__button {
+.registration__data__button {
   width: 167px;
   height: 50px;
   flex-shrink: 0;
@@ -1157,22 +1171,22 @@ summary {
   background-color: #F16D7F;
   transition: background-color 0.3s ease-in-out;
 }
-.registration__form .registration__data__button:hover {
+.registration__data__button:hover {
   color: #F16D7F;
   border: 1px solid #F16D7F;
   background-color: #FFFFFF;
 }
-.registration__form .registration__data__button svg {
+.registration__data__button svg {
   padding-left: 20px;
 }
-.registration__form .registration__data__button path {
+.registration__data__button path {
   fill: #FFFFFF;
 }
-.registration__form .registration__data__button:hover path {
+.registration__data__button:hover path {
   fill: #F16D7F;
 }
 .registration__features {
-  max-width: 652px;
+  width: 54%;
   padding-top: 64px;
 }
 .registration__features-title {
@@ -1207,10 +1221,6 @@ summary {
 }
 
 @media (max-width: 1024px) {
-  .header {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
   .promo__slogan {
     padding-left: 4%;
   }
@@ -1268,14 +1278,6 @@ summary {
   .form__subtitle {
     padding-bottom: 22px;
   }
-  .footer {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  .breadcrumbs {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
   .slider {
     height: 625px;
   }
@@ -1285,8 +1287,8 @@ summary {
     max-height: 100%;
   }
   .content {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0;
   }
   .product-box {
@@ -1300,7 +1302,7 @@ summary {
   }
   .filter-sort {
     justify-content: space-between;
-    padding-right: 13px;
+    padding-right: 16px;
     padding-top: 24px;
     padding-bottom: 40px;
   }
@@ -1311,15 +1313,16 @@ summary {
     padding-top: 40px;
   }
   .basket {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex-direction: column;
   }
   .basket__item-box {
     width: 100%;
+    align-items: center;
   }
   .basket__item {
-    width: 100%;
+    width: 734px;
   }
   .basket__button {
     justify-content: center;
@@ -1342,26 +1345,23 @@ summary {
   .basket__selectedproducts {
     padding-top: 59px;
     padding-bottom: 0px;
+    padding-left: 0;
     gap: 62px;
   }
   .registration {
-    padding-left: 2%;
-    padding-right: 2%;
     gap: 22px;
   }
   .registration__form {
     width: 50%;
   }
-  .registration__form .registration__data {
+  .registration__data {
     padding: 40px 0 96px;
   }
   .registration__features {
     width: 50%;
     padding-top: 40px;
   }
-  .registration__features-title,
-  .registration__features-subtitle,
-  .registration__features-text {
+  .registration__features-title, .registration__features-subtitle, .registration__features-text {
     font-size: 16px;
     line-height: 19px;
   }
@@ -1384,7 +1384,7 @@ summary {
     justify-content: center;
   }
   .promo__info {
-    margin: 50% 2% 50%;
+    margin: 50% 1rem 50%;
   }
   .promo__title {
     font-size: 38px;
@@ -1452,9 +1452,11 @@ summary {
   .footer__text {
     padding-top: 40px;
     padding-bottom: 9px;
+    padding-left: 0;
   }
   .icons {
     padding-top: 43px;
+    padding-right: 0;
   }
   .breadcrumbs {
     justify-content: center;
@@ -1484,11 +1486,8 @@ summary {
     margin-top: 64px;
     margin-bottom: 64px;
   }
-  .filter-box {
-    width: auto;
-  }
   .filter {
-    width: auto;
+    width: 360px;
   }
   .filter__heading {
     display: none;
@@ -1497,15 +1496,15 @@ summary {
     width: 37.5px;
     height: 25px;
   }
+  .sort {
+    gap: 24px;
+  }
   .sort__summary {
     width: auto;
   }
   .sort__heading {
     font-size: 12px;
     line-height: 14px;
-  }
-  .sort {
-    gap: 24px;
   }
   .product-catalog {
     margin-bottom: 64px;
@@ -1523,6 +1522,9 @@ summary {
   .basket__selectedproducts {
     gap: 30px;
   }
+  .basket__item {
+    width: 100%;
+  }
   .basket__img {
     width: 40%;
   }
@@ -1531,7 +1533,6 @@ summary {
     line-height: 19px;
     padding-top: 14px;
     padding-bottom: 26px;
-    padding-right: 10px;
     max-width: 144px;
   }
   .basket__text-box {
@@ -1587,7 +1588,7 @@ summary {
   .registration__form {
     width: 100%;
   }
-  .registration__form .registration__data {
+  .registration__data {
     padding: 40px 0 40px;
   }
   .registration__features {
